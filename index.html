@@ -4,11 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand&display=swap" rel="stylesheet">
     <title>The Budding Florist</title>
+    <meta name="description" content="Custom floral arrangements delivered anywhere on the North Shore">
     <link rel="stylesheet" href="styles.css"/>
     <script src="js/main.js"></script>
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
     <body>
-        <main><h1>The Budding Florist</h1></main>   
+        <main>
+            <!-- header & nav-->
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/TheBuddingFlorist-logo.png"/></a>
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about-flowers.html">About Flowers</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+            </nav>
+            <section id = "welcome">
+                <div class="welcome-item">
+                    <h2>Welcome!</h2>
+                    <p>If you are looking for a local florist to make and deliver custom floral arrangements to order, then...</p>
+                    <p>You've come to the right place!</p>
+                    <p>Based in Lynn MA, The Budding Florist can deliver to any town on the North Shore. Whether you need to brighten up your business, add a beatuiful touch to a family occasion or just let someone know you care, The Budding Florist can come through!</p>
+                    <br>
+                    <a class="btn btn-1" href="order.html">How to Order</a>
+                </div>
+                <div class="welcome-item">
+                    <img class="rounded-image" src="images/summer-bouquet.jpg" alt="beautiful bright arrangement of summer themed flowers" />
+                  </div>
+            </section>
+            <section id = "portfolio">
+                <h2>Check out some of our designs</h2>
+                <div id="gallery__filters">
+                    <button id="filter--show-all" class="gallery__filter tag--active"> Show all</button>
+                    <button id="filter--logos" class="gallery__filter"> Logos</button>
+                    <button id="filter--identity" class="gallery__filter"> Identity / Branding</button>
+                    <button id="filter--illustration" class="gallery__filter"> Illustration</button>
+                    <button id="filter--web-development" class="gallery__filter"> Web Design / Development</button>
+                    <button id="filter--packaging" class="gallery__filter"> Packaging</button>
+                    <p id="gallery__filters__message">Sorry, these filters won&rsquo;t work without JavaScript enabled. Please enable JavaScript, or simply click through the Case Studies below.</p>
+                    </div>
+                    <!-- #gallery__filters -->
+                    
+                    <div id="gallery__thumbs" class="gallery__row clearfix">
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--seasonal">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--autumn"><span class="thumb__caption">Autumn Sunshine</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--brights">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--elegance"><span class="thumb__caption">Bright Elegance</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--pastels tag--seasonal">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--pinks"><span class="thumb__caption">Classic Pinks</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--logos tag--seasonal tag--pastels">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--country"><span class="thumb__caption">Country Charm</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--brights">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--fiesta"><span class="thumb__caption">Fiesta!</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--holiday tag--brights">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--holiday"><span class="thumb__caption">Holiday Greetings</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--seasonal tag--brights">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--wild"><span class="thumb__caption">Wild Autumn</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    <div class="gallery__column gallery__thumb filter--show tag--brights">
+                        <div class="thumb__wrapper">
+                        <a href="#">
+                            <div id="thumb--wine"><span class="thumb__caption">Wine & Roses</span></div>
+                        </a>
+                        </div>
+                        <!-- .thumb__wrapper -->
+                    </div>
+                    <!-- .gallery__column gallery__thumb -->
+                    
+                    </div>
+                    <!-- #gallery__thumbs -->
+            </section>
+            <section id = "how-to-order">
+                <h2>How to Order</h2>
+                <div id = "order-steps">
+                    <div class = "steps">
+                        <h3>Step one: Get in Touch</h3>
+                    </div>
+                    <div class = "steps">
+                        <h3>Step two: Pick your style</h3>
+                        
+                    </div>
+                    <div class = "steps">
+                        <h3>Step three: Set up & pay</h3>
+                    </div>
+                </div>
+                <a class="btn btn-5" href="order.html">Start an Order</a>
+            </section>
+            <!-- footer-->
+            <footer>
+                <p><a href="https://www.instagram.com/thebuddingfloristlynnma/" target="_blank"><img src="images/instagram-budding-florist-web.png" alt="instagram icon" width="150" height="150"/></a>
+                <br> 
+                Follow us on Instagram! @thebuddingfloristlynnma</p>
+            </footer>
+        </main>   
     </body>
 </html>

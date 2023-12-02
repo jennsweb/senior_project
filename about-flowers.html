@@ -7,55 +7,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand&display=swap" rel="stylesheet">
-    <title>The Budding Florist: About Flowers</title>
-    <meta name="description" content="Learn more about the Language of Flowers">
+    <title>Flower colors and their meanings</title>
+    <meta name="description" content="learn what the different colors of flowers symbolize">
     <link rel="stylesheet" href="styles.css"/>
-    <script src="js/main.js"></script>
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    
 </head>
     <body>
-        <main>
-            <!-- header & nav-->
+        <!-- Navigation bar -->
+        <header class="header">
+            <!-- Logo -->
+            <a  href="index.html"><img src="images/TheBuddingFlorist-logo.png"/></a>
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
             <nav class="nav">
-                <div class="container">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/TheBuddingFlorist-logo.png"/></a>
-                    </div>
-                    <div id="mainListDiv" class="main_list">
-                        <ul class="navlinks">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="about-flowers.html">About Flowers</a></li>
-                            <li><a href="order.html">Order</a></li>
-                            
-                        </ul>
-                    </div>
-                    <span class="navTrigger">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </span>
-                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about-flowers.html">About Flowers</a> </li>
+                    <li><a href="order.html">Order Flowers</a></li>
+                    <li><a href="tel:+1978-578-0756">(978) 578-0756)</a></li>
+                </ul>
             </nav>
+        </header>
+        <main>
             <section id = "welcome">
                 <div class="welcome-item">
-                    <h2>The Language of Flower Colors</h2>
-                    <p>More info to come!</p>
+                    <h2>"Perfumed Words"</h2>
+                    <p>Over a century ago, Victorians took the words “say it with flowers” literally. From the species, to the color to even how they were handed to a recipient, flowers could speak the words that conventional codes of behavior frowned upon. Tulips signaled passion, while a bunch of peonies could symbolize bashfulness. Conversely, one could take a bouquet and hand it to someone upside down to convey an opposite meaning (their answer to “If you can’t say something nice…).
+                    </p>
+                    <p>Today, this tradition is still echoed in the way we interpret the colors of different flowers. Red is most often meant to symbolize love and passion, but it can also encourage someone to be their best. Check out our guide below to find out fun ways to communicate with color!</p>
                 </div>
                 <div class="welcome-item">
-                    <img class="rounded-image" src="images/summer-bouquet.jpg" alt="beautiful bright arrangement of summer themed flowers" />
+                    <img class="rounded-image" src="images/Wild-Autumn.jpg" alt="beautiful vibrant bouquet" />
                   </div>
             </section>
             
+            <section id = "flower-colors">
+                <h2>Flower Color Meanings</h2>
+                <div class = "row-3">
+                    <div class = "colors">
+                        <h3 class="red">Red</h3>
+                        <p><img src="images/flower-colors-red.png"><br>
+                            Red flowers are most often seen as symbolizing love and romance, but they can also convey other things such as encouragement. Red roses are a great choice for making a romantic gesture since the color is associated with the heart and the flush of love. A single rose is a symbol of love at first sight and red tulips can signal true love.
+                        </p>
+                    </div>
+                    <div class = "colors">
+                        <h3 class="orange">Orange</h3>
+                        <p><img src="images/flower-colors-orange2.png"><br>
+                            The color orange connotes warmth, energy and happiness. An arrangement with orange flowers can instantly brighten up a space and help people dealing with emotional or physical distress to feel better.
+                        </p>
+                        
+                    </div>
+                    <div class = "colors">
+                        <h3 class="yellow">Yellow</h3>
+                        <p><img src="images/flower-colors-yellow.png"><br>
+                            Similar to orange, yellow flowers can symbolize friendship as well as respect and good health. A bouquet with yellow blooms can signal appreciation for hard work, or understanding that someone is having a hard time. Yellow can also mean that you understand someone is having trouble or that you wish to renew a relationship that has had trouble.
+                        </p>
+                    </div>
+                </div>
+                <div class = "row-3">
+                    <div class = "colors">
+                        <h3 class="green">Green</h3>
+                        <p><img src="images/flower-colors-green.png"><br>
+                            Whether you want to bring a sense of calm energy to a room, or like to think outside the traditional bouquet palette, green is a great choice. Green symbolizes new life, good fortune and harmony, so an arrangement with green flowers can be a welcome gift for anyone who is moving into a new home, or recently had a promotion or is starting a new job.
+                        </p>
+                    </div>
+                <div class = "colors">
+                        <h3 class="blue">Blue</h3>
+                        <p><img src="images/flower-colors-blue.png"><br>
+                            The color blue has psychological associations of calm and peace. For this reason, blue flowers can communicate appreciation for a lasting relationship. They can also mean support and can be a good choice for someone who is grieving or going through an illness. For a serene atmosphere, an arrangement of blue toned flowers is a great choice.
+                        </p>
+                        
+                    </div>
+                    <div class = "colors">
+                        <h3 class="indigo">Indigo</h3>
+                        <p><img src="images/flower-colors-indigo.png"><br>
+                            The deep intense blue and purple tones in indigo flowers remind us of deep ocean waters or an evening sky. It can be calming, and yet evoke a sense of mystery. Along with these feelings, indigo can also remind one of having intuition and balance. A bouquet that included indigo flowers can communicate a message to a loved one to slow down and listen to their heart.
+                        </p>
+                    </div>
+                </div>
+                <div class = "row-3">
+                    <div class = "colors">
+                        <h3 class="purple">Purple</h3>
+                        <p><img src="images/flower-colors-purple.png"><br>
+                            Long associated with royalty, purple signals a range of feelings. From its history as a coveted pigment that was forbidden to commoners, we still tend to think of purple standing for wealth and elegance. But, it also has more modern connotations of creativity and quirkiness.
+                        </p>
+                    </div>
+                <div class = "colors">
+                        <h3 class="pink">Pink</h3>
+                        <p><img src="images/flower-colors-pink.png"><br>
+                            Pink symbolizes playfulness, delicateness and femininity. It can also symbolize openness and gentility. With associations like these, pink flowers have a balance between intensely romantic feelings and friendship. And since pink can also signal spontaneity and care, a bouquet of pink and maybe yellow and white flowers are a great surprise gift for friends and relatives.
+                        </p>
+                        
+                    </div>
+                    <div class = "colors">
+                        <h3 class="white">White</h3>
+                        <p><img src="images/flower-colors-white.png"><br>
+                            Purity, innocence and fidelity associations make white flowers a popular choice for bridal bouquets and other ceremonial bouquets.
+                            White flowers can also be a beautiful winter-inspired bouquet, or paired with other colors such as purple or pink to create a fresh-looking arrangement. Combining white blooms into a display of colorful blooms can accentuates a message of understanding.
+                        </p>
+                    </div>
+                </div>
+                    
+                </div>
+                <div id="order-button">
+                    <a class="btn btn-2" href="order.html">Start an Order</a>
+                </div>
+                
+            </section>
             
-            <!-- footer-->
-            <footer>
-                <p><a href="https://www.instagram.com/thebuddingfloristlynnma/" target="_blank"><img src="images/instagram-budding-florist-web.png" alt="instagram icon" width="150" height="150"/></a>
+        </main>
+        <!-- footer-->
+        <footer>
+            <div id="instagram">
+                <p>Follow us on Instagram!</p>
+                <p><a href="https://www.instagram.com/thebuddingfloristlynnma/" target="_blank"><img src="images/instagram-budding-florist-web.png" alt="instagram icon" width="100" height="100"/></a>
                 <br> 
-                Follow us on Instagram! @thebuddingfloristlynnma</p>
-            </footer>
-        </main>   
+                <a href="https://instagram.com/thebuddingfloristlynnma">@thebuddingfloristlynnma</a></p>
+            </div>
+            
+        </footer>  
     </body>
 </html>

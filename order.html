@@ -16,35 +16,87 @@
     <script src="js/scripts.js"></script>
 </head>
     <body>
-        <main>
-            <!-- header & nav-->
+        <!-- Navigation bar -->
+        <header class="header">
+            <!-- Logo -->
+            <a  href="index.html"><img src="images/TheBuddingFlorist-logo.png"/></a>
+            
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <!-- Menu -->
             <nav class="nav">
-                <div class="container">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/TheBuddingFlorist-logo.png"/></a>
-                    </div>
-                    <div id="mainListDiv" class="main_list">
-                        <ul class="navlinks">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="about-flowers.html">About Flowers</a></li>
-                            <li><a href="order.html">Order</a></li>
-                            
-                        </ul>
-                    </div>
-                    <span class="navTrigger">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </span>
-                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about-flowers.html">About Flowers</a> </li>
+                    <li><a href="order.html">Order Flowers</a></li>
+                    <li><a href="tel:+1978-578-0756">(978) 578-0756)</a></li>
+                </ul>
             </nav>
+        </header>
+        <main>
             <section id = "welcome">
                 <div class="welcome-item">
-                    <h2>Let's get started!</h2>
-                    <p>More info to come</p>
-                    <h2>Place an Order Now</h2>
-                    <p>Form will be below</p>
+                    <article>
+                        <h2>Order Flowers Here!</h2>
+                        <p>In addition to the arrangements pictured below, we also do custom arrangements. Just let us know what types of flowers and colors you would like to include and we can create a custom look for any occasion.</p>
+            
+                        <form id="flower-order" action="https://wp.zybooks.com/form-viewer.php" method="POST"  autocomplete="off">
+                            
+                                <legend>Let's get your order started!</legend>
+                                <fieldset>
+                                    <label for="first-name">First Name<span class="required">*</span></label>
+                                    <input id="first-name" name="first-name" required="" type="text" />
+                                    <label for="last-name">Last Name<span class="required">*</span></label>
+                                    <input id="last-name" name="last-name" required="" type="text" >
+                                    <br>
+                                    <label for="email">Email<span class="required">*</span></label>
+                                    <input id="email" name="email" type="email" required /><br>
+                                    <label for="phone">Phone<span class="required">*</span></label>
+                                    <input id="phone" name="phone" type="tel" required />
+                                    <br>
+                                </fieldset>
+                                
+                            <legend>What is your preferred method of contact?<span class="required">*</span></legend>
+                                <fieldset>
+                                    <input id="contact-phone" type="radio" name="contact-method"  value="phone" checked="checked" required ><label for="contact-phone">Phone</label>
+                                    <input id="contact-email" type="radio" name="contact-method"  value="email"><label for="contact-email">Email</label>
+                                </fieldset>
+                                
+                                <legend>I am looking for:<span class="required">*</span></legend>
+                                    <fieldset>
+                                        <input id="custom-bouquet" type="radio" name="flower-order"  value="custom-bouquet" checked="checked" required ><label for="custom-bouquet">A custom arrangement</label><br>
+                                        <input id="business-sub" type="radio" name="flower-order"  value="business"><label for="business-sub">I would like to get flowers for my business on a schedule</label><br>
+                                        <input id="multiple" type="radio" name="flower-order"  value="multiple"><label for="multiple">I need multiple arrangements for an event</label>
+                                    </fieldset>
+                                <legend>Delivery Location</legend>
+                                <fieldset>
+                                    <label for="town">Please choose the town you need flowers delivered to<span class="required">*</span></label><br>
+                                <select name="town" id="town">
+                                    <option value="" selected="selected">Select Town</option>
+                                    <option value="beverly">Beverly</option>
+                                    <option value="lynn">Lynn</option>
+                                    <option value="lynnfield">Lynnfield</option>
+                                    <option value="malden">Malden</option>
+                                    <option value="marblehead">Marblehead</option>
+                                    <option value="middleton">Middleton</option>
+                                    <option value="nahant">Nahant</option>
+                                    <option value="peabody">Peabody</option>
+                                    <option value="revere">Revere</option>
+                                    <option value="salem">Salem</option>
+                                    <option value="saugus">Saugus</option>
+                                    <option value="swampscott">Swampscott</option>
+                                </select>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="comments">Let us know about any details for your order</label><br>
+                                    <textarea id="comments" name="comments" rows="4" cols="30" required ></textarea>
+                                </fieldset>
+                        
+                        <input class="btn-5" type="submit" value="Submit" />
+                        </form>
+                    </article>
                 </div>
                 <div class="welcome-item">
                     <img class="rounded-image" src="images/Wine-Roses-Bouquets.jpg" alt="beautiful bouquets ready for delivery to an event" />
@@ -54,10 +106,14 @@
             
             <!-- footer-->
             <footer>
-                <p><a href="https://www.instagram.com/thebuddingfloristlynnma/" target="_blank"><img src="images/instagram-budding-florist-web.png" alt="instagram icon" width="150" height="150"/></a>
-                <br> 
-                Follow us on Instagram! @thebuddingfloristlynnma</p>
-            </footer>
+                <div id="instagram">
+                    <p>Follow us on Instagram!</p>
+                    <p><a href="https://www.instagram.com/thebuddingfloristlynnma/" target="_blank"><img src="images/instagram-budding-florist-web.png" alt="instagram icon" width="100" height="100"/></a>
+                    <br> 
+                    <a href="https://instagram.com/thebuddingfloristlynnma">@thebuddingfloristlynnma</a></p>
+                </div>
+                
+            </footer> 
         </main>   
     </body>
 </html>
